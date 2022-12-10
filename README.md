@@ -17,3 +17,15 @@ is already at the end of its row, we remove that queen and go back to the preced
 If the current row is the last row and a safe place has been found for the last queen, the a solution to the problem has been found.
 If the current row is the first row and its queen is being moved off the board, then all possible configurations have been examined
 and no valid solution exists for the value of n.
+
+## Usage
+
+You can build this project with [CMake](https://cmake.org/).
+
+The program has one optional command line argument where you can specify the value of `n`, which defaults to 8 if you leave the
+argument away.
+
+To generate a solution for `n = 4`:
+```
+nqueensproblem 4
+```
