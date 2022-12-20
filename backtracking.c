@@ -71,7 +71,7 @@ int main(int argc, char* argv[]) {
     } else if (argc == 2) {
         n = atoi(argv[1]);
     } else {
-        printf("wrong number of arguments\n");
+        puts("wrong number of arguments");
         return -1;
     }
 
@@ -84,7 +84,7 @@ int main(int argc, char* argv[]) {
     memset(board, false, sizeof(board));
 
     if (place_queens(n, board, 0) == false) {
-        printf("no solution found\n");
+        puts("no solution found");
     } else {
         print_solution(n, board);
     }
